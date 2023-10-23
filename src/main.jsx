@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
+// import { ToastContainer } from 'react-toastify'
+import { Toaster } from 'react-hot-toast'
+import { ToastContainer } from 'react-toastify'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <App />
+    <Toaster/>
   </BrowserRouter>
 
 )
