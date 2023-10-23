@@ -1,8 +1,8 @@
 import React from "react";
 const Home = () => {
     return(
-        <div>
-
+        <div className="flex justify-center items-center h-[100vh]">
+            Home
         </div>
     )
 }

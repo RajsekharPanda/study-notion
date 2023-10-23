@@ -34,10 +34,7 @@ const Navbar = (props) => {
                 }
                 { !isLoggedIn &&
                     <Link to="/signup">
-                        <button onClick={()=>{
-                            setIsLoggedIn(false);
-                            toast.success('Logged Out')
-                        }}>Sign Up</button>
+                        <button>Sign Up</button>
                     </Link>
                 }
                 { isLoggedIn &&
