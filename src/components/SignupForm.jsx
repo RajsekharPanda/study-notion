@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {AiOutLineEye , AiOutLineEyeInvisible } from "react-icons/ai"
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 
 const SignupForm =() => {
@@ -89,7 +89,7 @@ const SignupForm =() => {
                             value={formData.password}
                             />
                             <span onClick={()=> setShowPassword((prev) => !prev)}>
-                            {showPassword ? (<AiOutLineEyeInvisible/>) : (<AiOutLineEye/>)}
+                            {showPassword ? (<AiOutlineEyeInvisible/>) : (<AiOutlineEye/>)}
                             </span>
                         </label>
 
