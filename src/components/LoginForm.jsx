@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {AiOutLineEye , AiOutLineEyeInvisible } from "react-icons/ai"
+import {AiOutlineEye , AiOutlineEyeInvisible } from "react-icons/ai"
 import { Link } from "react-router-dom";
 
 const LoginForm =() => {
@@ -39,7 +39,7 @@ const LoginForm =() => {
                 />
 
                 <span onClick={()=> setShowPassword((prev) => !prev)}>
-                    {showPassword ? (<AiOutLineEyeInvisible/>) : (<AiOutLineEye/>)}
+                    {showPassword ? (<AiOutlineEyeInvisible/>) : (<AiOutlineEye/>)}
                 </span>
                 
                 <Link to="#">

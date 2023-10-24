@@ -104,7 +104,7 @@ const SignupForm =() => {
                             value={formData.confirmPassword}
                             />
                             <span onClick={()=> setShowPassword((prev) => !prev)}>
-                            {showPassword ? (<AiOutLineEyeInvisible/>) : (<AiOutLineEye/>)}
+                            {showPassword ? (<AiOutlineEyeInvisible/>) : (<AiOutlineEye/>)}
                             </span>
                         </label>
                 </div>
