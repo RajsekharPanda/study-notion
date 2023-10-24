@@ -2,7 +2,7 @@ import React from "react";
 import loginImg from "../assets/login.png"
 import Tamplate from "../components/Tamplate";
 
-const Login = ({setLoggedIn}) =>{
+const Login = ({setIsLoggedIn}) =>{
     return(
         <Tamplate
             title="Welcome Back"
@@ -10,7 +10,7 @@ const Login = ({setLoggedIn}) =>{
             desc2="Education to future-proof your career."
             image={loginImg}
             formType="login"
-            setLoggedIn={setLoggedIn}
+            setIsLoggedIn={setIsLoggedIn}
         />
     )
 }
