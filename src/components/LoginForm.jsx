@@ -18,11 +18,12 @@ const LoginForm =() => {
             <label>
                 <p>Email Address <sup>*</sup></p>
                 <input 
-                type="text"
+                type="email"
                 required 
                 value={formData.email} 
                 onChange={changeHandler}
                 placeholder="Enter email id"
+                name="email"
                 />
             </label>
             <label>
@@ -33,12 +34,21 @@ const LoginForm =() => {
                 value={formData.password} 
                 onChange={changeHandler}
                 placeholder="Enter Password"
+                name="password"
                 />
 
-                <span>
-                    {showPassword ? () : ()}
+                <span onClick={()=> setShowPassword((prev) => !prev)}>
+                    {showPassword ? (<AiOutLineEyeInvisible/>) : (<AiOutLineEye/>)}
                 </span>
+                
+                <Link to="#">
+                    <p>Forgot Password</p>
+                </Link>
             </label>
+
+            <button>
+                Sign In
+            </button>
         </form>
     )
 }
