@@ -2,7 +2,7 @@ import React from "react";
 import signupImg from "../assets/signup.png"
 import Tamplate from "../components/Tamplate";
 
-const Signup = ({setLoggedIn}) => {
+const Signup = ({setIsLoggedIn}) => {
     return(
         <Tamplate
             title="Join the millions learning to code with StudyNotion for free"
@@ -10,7 +10,7 @@ const Signup = ({setLoggedIn}) => {
             desc2="Education to future-proof your career."
             image={signupImg}
             formType="signup"
-            setLoggedIn={setLoggedIn}
+            setIsLoggedIn={setIsLoggedIn}
         />
     )
 }
