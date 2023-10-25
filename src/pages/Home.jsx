@@ -1,7 +1,7 @@
 import React from "react";
 const Home = () => {
     return(
-        <div className="flex justify-center items-center h-[100vh]">
+        <div className="flex justify-center items-center ">
             Home
         </div>
     )
