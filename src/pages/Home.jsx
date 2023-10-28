@@ -1,5 +1,5 @@
 import React from "react";
-const Home = () => {
+const Home = ({isLoggedIn}) => {
     return(
         <div className="flex justify-center items-center text-[#FFFFFF] text-3xl h-full">
             Home

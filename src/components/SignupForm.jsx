@@ -17,6 +17,7 @@ const SignupForm =({setIsLoggedIn}) => {
     })
 
     const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const [accountType, setAccountType] = useState("student");
 
     function changeHandler(event){
@@ -125,7 +126,7 @@ const SignupForm =({setIsLoggedIn}) => {
                             <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">Confirm Password<sup className="text-pink-200">*</sup></p>
                             <input
                             required
-                            type={showPassword? ("text") : ("password")}
+                            type={showConfirmPassword? ("text") : ("password")}
                             name="confirmPassword"
                             onChange={changeHandler}
                             placeholder="Confirm Password"
@@ -134,8 +135,8 @@ const SignupForm =({setIsLoggedIn}) => {
                             />
                             <span 
                             className="absolute right-3 top-[38px] cursor-pointer"
-                            onClick={()=> setShowPassword((prev) => !prev)}>
-                            {showPassword ? (<AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF"/>) : (<AiOutlineEye fontSize={24} fill="#AFB2BF"/>)}
+                            onClick={()=> setShowConfirmPassword((prev) => !prev)}>
+                            {showConfirmPassword ? (<AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF"/>) : (<AiOutlineEye fontSize={24} fill="#AFB2BF"/>)}
                             </span>
                         </label>
                 </div>
