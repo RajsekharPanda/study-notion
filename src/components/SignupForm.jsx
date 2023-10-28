@@ -47,7 +47,7 @@ const SignupForm =({setIsLoggedIn}) => {
 
             <form onSubmit={submitHandler}>
                 {/* firstName and lastName */}
-                <div>
+                <div className="flex gap-x-4">
 
                     <label>
                         <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">First Name <sup className="text-pink-200">*</sup></p>
@@ -93,7 +93,7 @@ const SignupForm =({setIsLoggedIn}) => {
                 </label>
 
                 {/* create password and confirm password */}
-                <div>
+                <div className="flex gap-x-4">
                     <label className="relative">
                             <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">Create Password<sup className="text-pink-200">*</sup></p>
                             <input
@@ -106,7 +106,7 @@ const SignupForm =({setIsLoggedIn}) => {
                             className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
                             />
                             <span 
-                            className="absolute left-[415px] top-[50px] cursor-pointer"
+                            className="absolute right-[7px] top-[39px] cursor-pointer"
                             onClick={()=> setShowPassword((prev) => !prev)}>
                             {showPassword ? (<AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF"/>) : (<AiOutlineEye fontSize={24} fill="#AFB2BF"/>)}
                             </span>
@@ -124,7 +124,7 @@ const SignupForm =({setIsLoggedIn}) => {
                             className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
                             />
                             <span 
-                            className="absolute right-3 top-[70px] cursor-pointer"
+                            className="absolute right-3 top-[39px] cursor-pointer"
                             onClick={()=> setShowPassword((prev) => !prev)}>
                             {showPassword ? (<AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF"/>) : (<AiOutlineEye fontSize={24} fill="#AFB2BF"/>)}
                             </span>
